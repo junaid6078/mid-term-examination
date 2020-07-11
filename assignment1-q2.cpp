@@ -9,15 +9,15 @@ int main(){
 	return 1;
 }
 void convert(void){
-	float radius,height,liter,meter;
+	float diameter,height,liter,meter;
 	cout<<"CONVERSION METER TO LITERS : "<<endl;
 	cout<<"==========================";
-	cout<<"\ninput radius of cylinder in meter = ";
-	cin>>radius;
+	cout<<"\ninput diameter of cylinder in meter = ";
+	cin>>diameter;
 	cout<<"input height of cylinder in meter = ";
 	cin>>height;
-	meter=pi*pow(radius/2,2)*height;
-	cout<<"\namount of liquid in meter = "<<meter;
-	liter=pow(meter,3);
-	cout<<"\namount of liquid in liters = "<<liter;
+	meter=pi*pow(diameter/2,2)*height;
+	cout<<"\namount of liquid in meter(m^3) = "<<meter;
+	liter=meter*1000;//1meter=1000liter
+	cout<<"\namount of liquid in liters(l) = "<<liter;
 }
